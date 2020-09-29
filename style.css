@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    background-color:#f3d0ba ;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+a, i{
+    color: #f9776e;
+}
+a i, i{
+    transform: scale(10);
+    transition: transform 200ms ease;
+}
+
+
+.draw{
+    position: relative;
+    left:290px;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+    transition: all 300ms ease;
+}
+
+
+.fade-in{
+    display: inherit;
+    z-index: 1;
+    opacity: 1;
+}
+
+#choices {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: absolute;
+    /* background: gray; */
+    width: 800px;
+    height: 800px;
+    transition: all 300ms ease
+    
+}
+
+
+
+#choices a{
+    position: relative; 
+    margin-right: 300px;
+    align-self: center;
+    left: 80px;
+    transition: opacity 250ms ease;
+
+}
+
+
+
+
+.btn-hover i:hover {
+    transform: scale(11);
+}
+
+.fade-away{
+    opacity: 0; 
+    
+}
+
+.selected {
+    pointer-events: none;
+    cursor: default ;
+}
+
+
+/* .player-choice-position{
+    left: 100px !important;   
+} */
+
+
+
+.message-style {
+    position: fixed;
+    font-size: 4rem;
+    color: #6c77c9 !important;
+    font-weight: bolder;
+    text-align: center;
+    /* right: 600px; */
+    /* z-index:-1; */
+    font-family: sans-serif;
+    justify-self: center;
+    align-self: center;
+    margin-left: 170px !important;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 300ms ease;
+
+}
+.message-style span, .message-style a{
+
+    font-size: 1.8rem;
+    display: block;
+    padding-top: 10px;
+
+}
+
+.message-style a {
+    color: #6c77c9;
+    font-size: 1.5rem;
+    /* text-align: center !important; */
+    /* text-decoration: none; */
+    margin-left: 145px !important;
+
+    
+}
+
+#draw-message {
+    margin-left: 110px !important;
+    /* display: none; */
+}
+
+#lose-message{
+    margin-left: 123px !important;
+}
+#win-message {
+    margin-left:120px !important ;
+}
+
+
